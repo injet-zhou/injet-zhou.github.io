@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>【前端】CSS三大特性 | Gridea</title>
-<link rel="shortcut icon" href="https://injet-zhou.github.io/favicon.ico?v=1614849539843">
+<link rel="shortcut icon" href="https://injet-zhou.github.io/favicon.ico?v=1614849839703">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://injet-zhou.github.io/styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="【前端】CSS三大特性 | Gridea - Atom Feed" href="https://injet-zhou.github.io/atom.xml">
@@ -11,12 +11,13 @@
 
 
 
-    <meta name="description" content="👉层叠性
+    <meta name="description" content="CSS三大特性
+👉层叠性
 什么是层叠性先来看一段代码
 &lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8..." />
+    &lt;meta charset=&qu..." />
     <meta name="keywords" content="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
@@ -26,7 +27,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://injet-zhou.github.io">
-  <img class="avatar" src="https://injet-zhou.github.io/images/avatar.png?v=1614849539843" alt="">
+  <img class="avatar" src="https://injet-zhou.github.io/images/avatar.png?v=1614849839703" alt="">
   </a>
   <h1 class="site-title">
     Gridea
@@ -93,7 +94,8 @@
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <h5 id="层叠性">👉层叠性</h5>
+                <h4 id="css三大特性">CSS三大特性</h4>
+<h5 id="层叠性">👉层叠性</h5>
 <p>什么是层叠性先来看一段代码</p>
 <pre><code class="language-html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
@@ -150,16 +152,20 @@
 <td>0,0,0,0</td>
 </tr>
 <tr>
-<td>类或伪类</td>
+<td>标签选择器</td>
 <td>0,0,0,1</td>
 </tr>
 <tr>
-<td>ID选择器</td>
+<td>类或伪类</td>
 <td>0,0,1,0</td>
 </tr>
 <tr>
-<td>行内样式</td>
+<td>ID选择器</td>
 <td>0,1,0,0</td>
+</tr>
+<tr>
+<td>行内样式</td>
+<td>1,0,0,0</td>
 </tr>
 <tr>
 <td>important</td>
@@ -178,7 +184,7 @@
 <ul>
 <li>
 <ul>
-<li>
+<li><a href="#css%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7">CSS三大特性</a>
 <ul>
 <li><a href="#%E5%B1%82%E5%8F%A0%E6%80%A7">👉层叠性</a></li>
 <li><a href="#%E7%BB%A7%E6%89%BF%E6%80%A7">👉继承性</a>
