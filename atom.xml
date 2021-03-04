@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://injet-zhou.github.io</id>
     <title>Gridea</title>
-    <updated>2021-03-04T04:01:21.282Z</updated>
+    <updated>2021-03-04T09:19:05.036Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://injet-zhou.github.io"/>
     <link rel="self" href="https://injet-zhou.github.io/atom.xml"/>
@@ -10,6 +10,89 @@
     <logo>https://injet-zhou.github.io/images/avatar.png</logo>
     <icon>https://injet-zhou.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[【前端】CSS三大特性]]></title>
+        <id>https://injet-zhou.github.io/post/css-san-da-te-xing/</id>
+        <link href="https://injet-zhou.github.io/post/css-san-da-te-xing/">
+        </link>
+        <updated>2021-03-04T09:17:47.000Z</updated>
+        <content type="html"><![CDATA[<h5 id="层叠性">👉层叠性</h5>
+<p>什么是层叠性先来看一段代码</p>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+    &lt;style&gt;
+        div {
+            color: red;
+        }
+        div {
+            color: blue;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div&gt;骑上我的小摩托&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>我们给文字“骑上我的小摩托”设置了两个相同的属性，最后的效果会显示成什么样呢？最后的的效果就是文字的颜色变成了蓝色，所以层叠性就是当设置有冲突属性时实际所呈现的效果，即<strong>样式覆盖</strong>。它所遵循的原则是<strong>就近原则</strong>，就是样式越靠近结构，它的权重就越高，或者说越靠后的样式权重越高，后来者居上。</p>
+<h5 id="继承性">👉继承性</h5>
+<p>继承就是子标签的样式继承父标签的样式，如text-，line-，font-等开头的属性一般会继承，以及color属性也会继承。</p>
+<h6 id="行高的继承">行高的继承</h6>
+<p>行高可带单位，也可不带单位，不带单位则表示倍数，即字符大小的多少倍。如果子元素没有指定行高，则继承父元素的行高。</p>
+<h5 id="优先级">👉优先级</h5>
+<p>优先级一般指的是选择器的优先级。优先级如下：</p>
+<p>继承或者*&lt;元素选择器&lt;类选择器、伪类选择器&lt;ID选择器&lt;行内样式&lt;important</p>
+<p>总的原则就是选择的范围越小，权重就越大。</p>
+<h6 id="权重叠加">权重叠加</h6>
+<p>复合选择器有权重叠加的问题，比如：</p>
+<p>😻</p>
+<pre><code class="language-css">ul li {
+    color: red;
+}
+</code></pre>
+<p>和👻</p>
+<pre><code class="language-css">li{
+    color: green;
+}
+</code></pre>
+<p>实际效果会是😻而不是👻，因为0,0,0,1+0,0,0,1=0,0,0,2&gt;0,0,0,1。</p>
+<p>注：权重值如下</p>
+<table>
+<thead>
+<tr>
+<th>选择器</th>
+<th>权重</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>继承或者*</td>
+<td>0,0,0,0</td>
+</tr>
+<tr>
+<td>类或伪类</td>
+<td>0,0,0,1</td>
+</tr>
+<tr>
+<td>ID选择器</td>
+<td>0,0,1,0</td>
+</tr>
+<tr>
+<td>行内样式</td>
+<td>0,1,0,0</td>
+</tr>
+<tr>
+<td>important</td>
+<td>无穷</td>
+</tr>
+</tbody>
+</table>
+<p><mark>权重值没有进位</mark>，<code>a:hover</code>的权重为0,0,1,1</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://injet-zhou.github.io/post/hello-gridea/</id>
