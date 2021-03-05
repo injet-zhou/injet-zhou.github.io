@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://injet-zhou.github.io</id>
     <title>Gridea</title>
-    <updated>2021-03-04T09:24:04.840Z</updated>
+    <updated>2021-03-05T00:55:08.087Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://injet-zhou.github.io"/>
     <link rel="self" href="https://injet-zhou.github.io/atom.xml"/>
@@ -10,6 +10,33 @@
     <logo>https://injet-zhou.github.io/images/avatar.png</logo>
     <icon>https://injet-zhou.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[【前端】常用HTML标签]]></title>
+        <id>https://injet-zhou.github.io/post/qian-duan-chang-yong-html-biao-qian/</id>
+        <link href="https://injet-zhou.github.io/post/qian-duan-chang-yong-html-biao-qian/">
+        </link>
+        <updated>2021-03-05T00:53:15.000Z</updated>
+        <content type="html"><![CDATA[<h5 id="文本格式化标签">文本格式化标签</h5>
+<p>由于有的文字需要有特殊的效果，比如<strong>加粗</strong>、<em>斜体</em>、<u>下划线</u>等，但是网页文档不像word可以直接选中设置，这时候就需要对应的文本格式标签，用来突出显示某些文字：</p>
+<p>加粗：<code>&lt;strong&gt;</code>这是加粗文字<code>&lt;/strong&gt;</code>或者<code>&lt;b&gt;&lt;/b&gt;</code></p>
+<p>斜体：<code>&lt;em&gt;这是斜体文字&lt;/em&gt;或者&lt;i&gt;&lt;/i&gt;</code></p>
+<p>删除线：<code>&lt;del&gt;删除&lt;/del&gt;或者&lt;s&gt;&lt;/s&gt;</code></p>
+<p>下划线：<code>&lt;ins&gt;下划线文字&lt;/ins&gt;或者&lt;u&gt;&lt;/u&gt;</code></p>
+<h5 id="divspan标签"><code>&lt;div&gt;&lt;span&gt;</code>标签</h5>
+<p><code>&lt;div&gt;</code>和<code>&lt;span&gt;</code>标签在语义上不含任何内容，是一个盒子，用来装内容，但是他们也有区别，<code>&lt;div&gt;</code>是块级元素，<code>&lt;span&gt;</code>是行内元素，块级元素可以包含行内元素和其他块级元素，类比来说就是<code>&lt;div&gt;</code>是更大的盒子，<code>&lt;span&gt;</code>是更小的盒子。</p>
+<h5 id="img标签"><code>&lt;img&gt;</code>标签</h5>
+<p>用以显示图像，<code>src</code>属性表示图片的路径，<code>alt</code>属性表示替换文本，当图片无法显示时，显示相应的文字。<code>title</code>属性表示鼠标悬停在图像上时显示的文本。</p>
+<h5 id="a标签"><code>&lt;a&gt;</code>标签</h5>
+<p>​		表示超链接，用来跳转到另一个页面，最常用的属性有<code>href</code>以及<code>target</code>分别表示即将跳转的页面地址，已什么样的方式打开，比如<code>&lt;a href=&quot;http://www.google.com&quot;&gt;谷歌&lt;/a&gt;</code>就表示点击后跳转到谷歌，<code>target</code>属性值有<code>_self</code>在当前页面打开、<code>_blank</code>在新标签页打开，<code>href</code>是必须的，如果没有<code>href</code>，download、media、rel、target等属性无法使用。</p>
+<p>​		当<code>href</code>的值为#时，表示指向当前页面，<code>href</code>的值为文件的路径时表示点击可下载该文件。此外，不仅是<code>&lt;a&gt;</code>标签可以添加超连接，大部分元素都可以添加超连接，比如<code>&lt;img&gt;</code>。</p>
+<p>此外<code>&lt;a&gt;</code>标签也可以做锚点链接：</p>
+<pre><code class="language-html">&lt;a href=&quot;#go&quot;&gt;跳转&lt;/a&gt;
+&lt;h3 id=&quot;go&quot;&gt;
+    I am a robot
+&lt;/h3&gt;
+</code></pre>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【前端】CSS三大特性]]></title>
         <id>https://injet-zhou.github.io/post/css-san-da-te-xing/</id>

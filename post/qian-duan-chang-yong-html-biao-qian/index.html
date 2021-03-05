@@ -2,22 +2,18 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>【前端】CSS三大特性 | Gridea</title>
+<title>【前端】常用HTML标签 | Gridea</title>
 <link rel="shortcut icon" href="https://injet-zhou.github.io/favicon.ico?v=1614905698602">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://injet-zhou.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="【前端】CSS三大特性 | Gridea - Atom Feed" href="https://injet-zhou.github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="【前端】常用HTML标签 | Gridea - Atom Feed" href="https://injet-zhou.github.io/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="CSS三大特性
-👉层叠性
-什么是层叠性先来看一段代码
-&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset=&qu..." />
+    <meta name="description" content="文本格式化标签
+由于有的文字需要有特殊的效果，比如加粗、斜体、下划线等，但是网页文档不像word可以直接选中设置，这时候就需要对应的文本格式标签，用来突出显示某些文字：
+加粗：&lt;strong&gt;这是加粗文字&lt;/strong&..." />
     <meta name="keywords" content="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
@@ -80,11 +76,11 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              【前端】CSS三大特性
+              【前端】常用HTML标签
             </h2>
             <div class="post-info">
               <span>
-                2021-03-04
+                2021-03-05
               </span>
               <span>
                 3 min read
@@ -94,86 +90,25 @@
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <h4 id="css三大特性">CSS三大特性</h4>
-<h5 id="层叠性">👉层叠性</h5>
-<p>什么是层叠性先来看一段代码</p>
-<pre><code class="language-html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-    &lt;style&gt;
-        div {
-            color: red;
-        }
-        div {
-            color: blue;
-        }
-    &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;div&gt;骑上我的小摩托&lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+                <h5 id="文本格式化标签">文本格式化标签</h5>
+<p>由于有的文字需要有特殊的效果，比如<strong>加粗</strong>、<em>斜体</em>、<u>下划线</u>等，但是网页文档不像word可以直接选中设置，这时候就需要对应的文本格式标签，用来突出显示某些文字：</p>
+<p>加粗：<code>&lt;strong&gt;</code>这是加粗文字<code>&lt;/strong&gt;</code>或者<code>&lt;b&gt;&lt;/b&gt;</code></p>
+<p>斜体：<code>&lt;em&gt;这是斜体文字&lt;/em&gt;或者&lt;i&gt;&lt;/i&gt;</code></p>
+<p>删除线：<code>&lt;del&gt;删除&lt;/del&gt;或者&lt;s&gt;&lt;/s&gt;</code></p>
+<p>下划线：<code>&lt;ins&gt;下划线文字&lt;/ins&gt;或者&lt;u&gt;&lt;/u&gt;</code></p>
+<h5 id="divspan标签"><code>&lt;div&gt;&lt;span&gt;</code>标签</h5>
+<p><code>&lt;div&gt;</code>和<code>&lt;span&gt;</code>标签在语义上不含任何内容，是一个盒子，用来装内容，但是他们也有区别，<code>&lt;div&gt;</code>是块级元素，<code>&lt;span&gt;</code>是行内元素，块级元素可以包含行内元素和其他块级元素，类比来说就是<code>&lt;div&gt;</code>是更大的盒子，<code>&lt;span&gt;</code>是更小的盒子。</p>
+<h5 id="img标签"><code>&lt;img&gt;</code>标签</h5>
+<p>用以显示图像，<code>src</code>属性表示图片的路径，<code>alt</code>属性表示替换文本，当图片无法显示时，显示相应的文字。<code>title</code>属性表示鼠标悬停在图像上时显示的文本。</p>
+<h5 id="a标签"><code>&lt;a&gt;</code>标签</h5>
+<p>​		表示超链接，用来跳转到另一个页面，最常用的属性有<code>href</code>以及<code>target</code>分别表示即将跳转的页面地址，已什么样的方式打开，比如<code>&lt;a href=&quot;http://www.google.com&quot;&gt;谷歌&lt;/a&gt;</code>就表示点击后跳转到谷歌，<code>target</code>属性值有<code>_self</code>在当前页面打开、<code>_blank</code>在新标签页打开，<code>href</code>是必须的，如果没有<code>href</code>，download、media、rel、target等属性无法使用。</p>
+<p>​		当<code>href</code>的值为#时，表示指向当前页面，<code>href</code>的值为文件的路径时表示点击可下载该文件。此外，不仅是<code>&lt;a&gt;</code>标签可以添加超连接，大部分元素都可以添加超连接，比如<code>&lt;img&gt;</code>。</p>
+<p>此外<code>&lt;a&gt;</code>标签也可以做锚点链接：</p>
+<pre><code class="language-html">&lt;a href=&quot;#go&quot;&gt;跳转&lt;/a&gt;
+&lt;h3 id=&quot;go&quot;&gt;
+    I am a robot
+&lt;/h3&gt;
 </code></pre>
-<p>我们给文字“骑上我的小摩托”设置了两个相同的属性，最后的效果会显示成什么样呢？最后的的效果就是文字的颜色变成了蓝色，所以层叠性就是当设置有冲突属性时实际所呈现的效果，即<strong>样式覆盖</strong>。它所遵循的原则是<strong>就近原则</strong>，就是样式越靠近结构，它的权重就越高，或者说越靠后的样式权重越高，后来者居上。</p>
-<h5 id="继承性">👉继承性</h5>
-<p>继承就是子标签的样式继承父标签的样式，如text-，line-，font-等开头的属性一般会继承，以及color属性也会继承。</p>
-<h6 id="行高的继承">行高的继承</h6>
-<p>行高可带单位，也可不带单位，不带单位则表示倍数，即字符大小的多少倍。如果子元素没有指定行高，则继承父元素的行高。</p>
-<h5 id="优先级">👉优先级</h5>
-<p>优先级一般指的是选择器的优先级。优先级如下：</p>
-<p>继承或者*&lt;元素选择器&lt;类选择器、伪类选择器&lt;ID选择器&lt;行内样式&lt;important</p>
-<p>总的原则就是选择的范围越小，权重就越大。</p>
-<h6 id="权重叠加">权重叠加</h6>
-<p>复合选择器有权重叠加的问题，比如：</p>
-<p>😻</p>
-<pre><code class="language-css">ul li {
-    color: red;
-}
-</code></pre>
-<p>和👻</p>
-<pre><code class="language-css">li{
-    color: green;
-}
-</code></pre>
-<p>实际效果会是😻而不是👻，因为0,0,0,1+0,0,0,1=0,0,0,2&gt;0,0,0,1。</p>
-<p>注：权重值如下</p>
-<table>
-<thead>
-<tr>
-<th>选择器</th>
-<th>权重</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>继承或者*</td>
-<td>0,0,0,0</td>
-</tr>
-<tr>
-<td>标签选择器</td>
-<td>0,0,0,1</td>
-</tr>
-<tr>
-<td>类或伪类</td>
-<td>0,0,1,0</td>
-</tr>
-<tr>
-<td>ID选择器</td>
-<td>0,1,0,0</td>
-</tr>
-<tr>
-<td>行内样式</td>
-<td>1,0,0,0</td>
-</tr>
-<tr>
-<td>important</td>
-<td>无穷</td>
-</tr>
-</tbody>
-</table>
-<p><mark>权重值没有进位</mark>，<code>a:hover</code>的权重为0,0,1,1</p>
 
               </div>
               <div class="toc-container">
@@ -184,19 +119,12 @@
 <ul>
 <li>
 <ul>
-<li><a href="#css%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7">CSS三大特性</a>
+<li>
 <ul>
-<li><a href="#%E5%B1%82%E5%8F%A0%E6%80%A7">👉层叠性</a></li>
-<li><a href="#%E7%BB%A7%E6%89%BF%E6%80%A7">👉继承性</a>
-<ul>
-<li><a href="#%E8%A1%8C%E9%AB%98%E7%9A%84%E7%BB%A7%E6%89%BF">行高的继承</a></li>
-</ul>
-</li>
-<li><a href="#%E4%BC%98%E5%85%88%E7%BA%A7">👉优先级</a>
-<ul>
-<li><a href="#%E6%9D%83%E9%87%8D%E5%8F%A0%E5%8A%A0">权重叠加</a></li>
-</ul>
-</li>
+<li><a href="#%E6%96%87%E6%9C%AC%E6%A0%BC%E5%BC%8F%E5%8C%96%E6%A0%87%E7%AD%BE">文本格式化标签</a></li>
+<li><a href="#divspan%E6%A0%87%E7%AD%BE"><code>&lt;div&gt;&lt;span&gt;</code>标签</a></li>
+<li><a href="#img%E6%A0%87%E7%AD%BE"><code>&lt;img&gt;</code>标签</a></li>
+<li><a href="#a%E6%A0%87%E7%AD%BE"><code>&lt;a&gt;</code>标签</a></li>
 </ul>
 </li>
 </ul>
@@ -215,9 +143,9 @@
         
           <div class="next-post">
             <div class="next">下一篇</div>
-            <a href="https://injet-zhou.github.io/post/hello-gridea/">
+            <a href="https://injet-zhou.github.io/post/css-san-da-te-xing/">
               <h3 class="post-title">
-                Hello Gridea
+                【前端】CSS三大特性
               </h3>
             </a>
           </div>
